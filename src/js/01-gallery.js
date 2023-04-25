@@ -13,10 +13,10 @@ const makeGallery = ({ preview, original, description }) => {
   </li>
   `
 };
+
 const makeGalleryImages = galleryItems
   .map(makeGallery)
   .join('');
-
 galleryList.insertAdjacentHTML('afterbegin', makeGalleryImages);
 
 new SimpleLightbox('.gallery a', {
