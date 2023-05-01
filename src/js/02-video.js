@@ -3,7 +3,7 @@ import throttle from 'lodash.throttle';
 
 const iframe = document.querySelector('iframe');
 const player = new Player(iframe);
-STORAGE_KEY = 'videoplayer-current-time';
+const STORAGE_KEY = 'videoplayer-current-time';
 const savedCurrentTimeInLS = localStorage.getItem(STORAGE_KEY);
 
 const onTimeTracking = (e) => {
